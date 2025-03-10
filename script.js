@@ -12,7 +12,7 @@
     const sortedBands = bands.sort((a, b) => cleanBandName(a).localeCompare(cleanBandName(b)));
 
     // Populate the unordered list with the sorted bands
-    const bandList = document.getElementById('band');
+    const bandList = document.getElementById('bands');
     sortedBands.forEach(band => {
         const li = document.createElement('li');
         li.textContent = band;
